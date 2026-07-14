@@ -1,0 +1,12 @@
+Kynward Dev Toolkit
+Copyright 2026 Evghenii Rosca
+
+This repository contains the public developer-tooling surface associated with the Kynward project.
+
+Unless a file or directory explicitly states otherwise, the Apache License 2.0 applies to source code, tooling code, configuration files, public examples, and public developer documentation in this repository.
+
+The Kynward name, logos, marks, setting, lore, narrative materials, worldbuilding materials, visual identity, concept art, music, sound, fonts, screenshots, mockups, commercial game design, and other non-code assets are not granted for reuse under the Apache License 2.0 unless they include an explicit license statement.
+
+Temporary, placeholder, or reference materials may exist only for public toolkit development and review. Their presence in the repository does not grant third-party reuse rights unless explicitly stated.
+
+Contributors must not add private game content, third-party assets, generated images, music, fonts, proprietary code, confidential data, local secrets, or copied material unless the license is compatible with this repository and the source is documented.
