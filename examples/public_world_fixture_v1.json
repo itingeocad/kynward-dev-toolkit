@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "world": {
+    "id": "sample_world",
+    "name": "Sample Public World",
+    "description": "Synthetic public-safe fixture for toolkit validation examples."
+  },
+  "zones": [
+    {
+      "id": "sample_zone",
+      "name": "Sample Zone",
+      "type": "forest"
+    }
+  ],
+  "regions": [
+    {
+      "id": "sample_region",
+      "name": "Sample Region",
+      "zone_id": "sample_zone"
+    }
+  ],
+  "places": [
+    {
+      "id": "sample_place_a",
+      "name": "Sample Place A",
+      "region_id": "sample_region",
+      "type": "camp"
+    },
+    {
+      "id": "sample_place_b",
+      "name": "Sample Place B",
+      "region_id": "sample_region",
+      "type": "watch_post"
+    }
+  ],
+  "connections": [
+    {
+      "id": "sample_connection",
+      "type": "trail",
+      "places": [
+        "sample_place_a",
+        "sample_place_b"
+      ]
+    }
+  ]
+}
