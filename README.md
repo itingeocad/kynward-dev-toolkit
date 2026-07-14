@@ -53,6 +53,24 @@ This repository is in the initial open-source setup stage.
 
 The first milestone is to establish a safe public toolkit boundary and add small, useful developer tools that do not depend on private Kynward content.
 
+## Usage
+
+Current checks are dependency-free Python scripts:
+
+```bash
+python tools/markdown_structure_check.py .
+python tools/markdown_link_check.py .
+python tools/json_fixture_validate.py examples/sample_world_fixture.json
+```
+
+See [docs/USAGE.md](docs/USAGE.md) for details.
+
+## Public safety
+
+Before adding files to this repository, review [docs/PUBLIC_BOUNDARY_CHECKLIST.md](docs/PUBLIC_BOUNDARY_CHECKLIST.md).
+
+Do not publish private lore, final assets, private roadmap details, credentials, local environment files, or unreleased commercial game data.
+
 ## License
 
 Source code, tooling code, configuration files, and public developer documentation in this repository are licensed under the Apache License 2.0 unless a file or directory explicitly states otherwise.
