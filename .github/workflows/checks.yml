@@ -1,0 +1,30 @@
+name: Public Toolkit Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  checks:
+    name: Documentation and fixture checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check Markdown structure
+        run: python tools/markdown_structure_check.py .
+
+      - name: Check Markdown local links
+        run: python tools/markdown_link_check.py .
+
+      - name: Validate public sample fixture
+        run: python tools/json_fixture_validate.py examples/sample_world_fixture.json
