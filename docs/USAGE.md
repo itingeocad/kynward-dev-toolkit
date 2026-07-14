@@ -15,7 +15,26 @@ All commands use repository-relative paths and public files from this repository
 git clone https://github.com/itingeocad/kynward-dev-toolkit.git
 cd kynward-dev-toolkit
 ```
+## Windows PowerShell Notes
 
+If `python` is not available on Windows, use the `py` launcher instead.
+
+### Run the checks
+
+```powershell
+py tools/markdown_structure_check.py .
+py tools/markdown_link_check.py .
+py tools/json_fixture_validate.py examples/sample_world_fixture.json
+```
+
+The expected output is the same as shown below for each tool.
+
+If you have GitHub CLI installed, you can also clone using:
+
+```powershell
+gh repo clone itingeocad/kynward-dev-toolkit
+cd kynward-dev-toolkit
+```
 ## Check Markdown structure
 
 ```bash
