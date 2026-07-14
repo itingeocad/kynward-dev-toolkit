@@ -1,5 +1,7 @@
 # Kynward Dev Toolkit
 
+[![Public Toolkit Checks](https://github.com/itingeocad/kynward-dev-toolkit/actions/workflows/checks.yml/badge.svg)](https://github.com/itingeocad/kynward-dev-toolkit/actions/workflows/checks.yml)
+
 Kynward Dev Toolkit is a public open-source companion repository for developer tooling extracted from the private Kynward game project.
 
 The goal of this repository is to provide safe, reusable tools for Godot prototype development, documentation workflows, validation helpers, smoke-test checklists, and data inspection utilities without exposing private game content, lore, commercial assets, or unreleased product materials.
@@ -53,7 +55,7 @@ This repository is in the initial open-source setup stage.
 
 The first milestone is to establish a safe public toolkit boundary and add small, useful developer tools that do not depend on private Kynward content.
 
-## Usage
+## Current checks
 
 Current checks are dependency-free Python scripts:
 
@@ -62,6 +64,8 @@ python tools/markdown_structure_check.py .
 python tools/markdown_link_check.py .
 python tools/json_fixture_validate.py examples/sample_world_fixture.json
 ```
+
+These checks have been verified locally on Windows PowerShell and are also covered by the `Public Toolkit Checks` GitHub Actions workflow.
 
 See [docs/USAGE.md](docs/USAGE.md) for details.
 
