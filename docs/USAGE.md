@@ -19,7 +19,7 @@ cd kynward-dev-toolkit
 
 If `python` is not available on Windows, use the `py` launcher instead.
 
-### Run the checks:
+### Run the checks
 
 ```powershell
 py tools/markdown_structure_check.py .
