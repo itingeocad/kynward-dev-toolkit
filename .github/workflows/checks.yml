@@ -1,4 +1,4 @@
-name: Public Toolkit Checks
+﻿name: Public Toolkit Checks
 
 on:
   push:
@@ -28,3 +28,5 @@ jobs:
 
       - name: Validate public sample fixture
         run: python tools/json_fixture_validate.py examples/sample_world_fixture.json
+      - name: Run Markdown checker unit tests
+        run: python -m unittest tools.test_markdown_checkers -v
