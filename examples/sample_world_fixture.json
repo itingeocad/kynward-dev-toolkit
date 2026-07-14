@@ -1,35 +1,46 @@
 {
   "schema_version": 1,
-  "name": "Sample Toolkit Fixture",
-  "description": "Synthetic public-safe fixture for validation and documentation examples.",
+  "world": {
+    "id": "sample_world",
+    "name": "Sample Public World",
+    "description": "Synthetic public-safe fixture for validation and documentation examples."
+  },
   "zones": [
     {
-      "id": "sample_zone_001",
-      "type": "forest",
-      "display_name": "Sample Forest Zone"
+      "id": "sample_zone",
+      "name": "Sample Zone",
+      "type": "forest"
     }
   ],
   "regions": [
     {
-      "id": "sample_region_001",
-      "zone_id": "sample_zone_001",
-      "display_name": "Sample Region"
+      "id": "sample_region",
+      "name": "Sample Region",
+      "zone_id": "sample_zone"
     }
   ],
   "places": [
     {
-      "id": "sample_place_001",
-      "region_id": "sample_region_001",
-      "type": "camp",
-      "display_name": "Sample Camp"
+      "id": "sample_place_a",
+      "name": "Sample Place A",
+      "region_id": "sample_region",
+      "type": "camp"
+    },
+    {
+      "id": "sample_place_b",
+      "name": "Sample Place B",
+      "region_id": "sample_region",
+      "type": "watch_post"
     }
   ],
   "connections": [
     {
-      "id": "sample_connection_001",
-      "from_place_id": "sample_place_001",
-      "to_place_id": "sample_place_001",
-      "type": "trail"
+      "id": "sample_connection",
+      "type": "trail",
+      "places": [
+        "sample_place_a",
+        "sample_place_b"
+      ]
     }
   ]
 }
